@@ -135,8 +135,30 @@ h4{
 
 /*ARTISTA*/
 
+.cajaMiley{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.miley{
+    width: 800px;
+    height: 1000px;
+    margin-left: 5px;
+}
 
-
+.letramiley{
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+}
+.letramiley2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+}
+.top5{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 25px;
+}
 /*ALBUM*/
 
 
