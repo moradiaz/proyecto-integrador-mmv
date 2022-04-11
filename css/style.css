@@ -164,6 +164,37 @@ h4{
 
 
 /*CANCIONES*/
+.cajaDoja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 40px;
+}
+.textodoja{
+    margin-left: 20px;  
+}
+.titulodoja{
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+}
+.nombrecanciondoja{  
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+}
+.nombrealbum{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 50px; 
+}
+
+
+
+
+    
+
+
+
+
+
 
 /*PLAYSLIST*/
 
