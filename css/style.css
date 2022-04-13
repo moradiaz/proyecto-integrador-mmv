@@ -161,7 +161,30 @@ h4{
 }
 /*ALBUM*/
 
+.cajaTaylor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.imagenTaylor{
+    width: 800px;
+    height: 870px;
+    margin-left: 5px;
+}
 
+.tituloTaylor{
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+}
+.nombrealbumtaylor{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+}
+.infoTaylor{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 17px;
+}
 
 /*CANCIONES*/
 .cajaDoja{
