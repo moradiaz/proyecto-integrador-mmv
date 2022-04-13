@@ -223,6 +223,40 @@ h4{
 /*GENEROS*/
 
 /*DETALLE GENERO*/
+.detallegenero{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px; 
+
+}
+.cajapadredetallesgenero{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px; 
+    padding-top: 30px;
+    justify-content:space-evenly ;
+}
+.imagenesgeneros{
+    width: 200px;
+    height: 200px; 
+}
+.imagenesgenpop{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+    height: 300px;
+    width: 300px;
+    margin-left: 570px;
+    padding-top: 20px;
+
+
+
+
+
+
+}
 
 
 /*BUSQUEDA*/
