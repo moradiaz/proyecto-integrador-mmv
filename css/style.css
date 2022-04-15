@@ -225,6 +225,27 @@ h4{
 
 /*PLAYSLIST*/
 
+.playlistcaja{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.cajaPlaylist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.articleplaylist{
+    margin-right: 60px;
+}
+ .letracancion{
+    
+    font-family: 'Bebas Neue', cursive;
+ }
+
+ .letraartista{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+ }
 /*GENEROS*/
 
 /*DETALLE GENERO*/
