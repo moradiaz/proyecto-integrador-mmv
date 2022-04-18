@@ -290,10 +290,11 @@ a:hover{
 
 /*BUSQUEDA*/
 .fondoimagensearch{
-    background-image: URL(../img/tayylor.jpg.crdownload);
+    background-image: url(../img/albumes/lover.jpg);
     background-repeat: no-repeat;
     width: 50vw;
     height: 50vw;
+    
 
 }
 .resultadodebusqueda{
