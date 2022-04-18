@@ -308,7 +308,7 @@ a:hover{
 
 
 
-@media (max-width: 768px){
+@media (max-width: 390px){
     .marc{
         width: 30vw;
         height: 30vw;
@@ -337,7 +337,28 @@ a:hover{
         width: 30vw;
         height: 30vw;
     }
-    .navli {
+    .cajaPadreindex{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 15px;
+        
+    }
+    
+    .cajaPadreindex2{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .add{
+    color: black;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 23px; 
+}
+
+.nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -345,6 +366,16 @@ a:hover{
     align-items: flex-end;
     text-align: center;
     margin: 15px;  
+}
+    .navli {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 10px;  
+  
     width: 16vw;
     height: 6vw;
     }
@@ -353,9 +384,14 @@ a:hover{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
-    
+     align-items: flex-start;
         height: 45vw;
         margin-left: 20px;
+    }
+
+    .imagendoja{
+        width: 30vw;
+        height: 30vw;
     }
     .audio{
         width: 30vw;
@@ -434,21 +470,23 @@ a:hover{
    
     .cajaPlaylist{
         display: flex;
-        flex-direction: column;
+        align-items: flex-start;
         flex-wrap: wrap;
-        width: 40vw;
-        height: 60vw;
+        flex-direction: row;
+        gap: 30px; 
+        padding-top: 30px;
+        justify-content:space-evenly ;
     }
     
     .sound{
-        width: 20vw;
+        width: 30vw;
     }
     
     .arrancarmelo{
     font-size: 10px;
 }
     .play{
-        width: 30vw;
+        width: 50vw;
         height: 50vw;
     }
     .playlistcaja{
@@ -484,9 +522,9 @@ a:hover{
     }
     .imagenesgenpop{
         
-        margin-left: 278px;
-        width: 30vw;
-        height: 30vw; 
+        margin-left: 120px;
+        width: 40vw;
+        height: 40vw; 
     
     }
     
