@@ -287,8 +287,10 @@ a:hover{
 
 /*BUSQUEDA*/
 .fondoimagensearch{
-    background-image: url(../img/albumes/lover.jpg);
+    background-image: URL(../img/tayylor.jpg.crdownload);
     background-repeat: no-repeat;
+    width: 50vw;
+    height: 50vw;
 
 }
 .resultadodebusqueda{
@@ -486,4 +488,3 @@ a:hover{
   
 }
 
-@media (max-width: 320px){}
