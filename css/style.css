@@ -113,25 +113,27 @@ h4{
     height: 300px;
 }
 
-.footer{
+.bloquefooter{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 15px; 
     background-color: rgb(0, 0, 0);
     padding: 20px;
    color: white;
 }
 
+
 .lifooter{
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   text-align: center;
 }
 
+.enfooter{
+    margin-top: 30px;
+}
 
 /*ARTISTA*/
 
@@ -283,6 +285,7 @@ h4{
 a:hover{
     color:red;
 }
+/*FOOTER*/
 
 
 /*BUSQUEDA*/
