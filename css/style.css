@@ -286,3 +286,28 @@ a:hover{
 
 
 /*BUSQUEDA*/
+
+.fondoimagensearch{
+    background-image: url(../img/albumes/lover.jpg);
+    background-repeat: no-repeat  ;
+    margin-top: 20px;
+    margin-left: 0%; 
+    margin-right: 0%;
+    min-height: 100%;
+    min-width: 100%;
+
+
+
+
+}
+
+
+.cajaHijosearch{
+
+}
+.resultadodebusqueda{
+    font-size: 30px; 
+}
+.cancionestaylorsearch{
+    font-size: 30px;
+}
