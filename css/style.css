@@ -447,14 +447,14 @@ a:hover{
     font-size: 10px;
 }
     .play{
-        width: 40vw;
-        height: 30vw;
-        
+        width: 30vw;
+        height: 50vw;
     }
-    .articleplaylist{
-        width: 20vw;
-        height: 20vw;
+    .playlistcaja{
+       
+        margin-right: 75px;
     }
+    
      .letracancion{
         
         font-family: 'Bebas Neue', cursive;
