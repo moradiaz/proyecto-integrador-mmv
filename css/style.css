@@ -295,6 +295,9 @@ a:hover{
     background-repeat: no-repeat;
     width: 50vw;
     height: 50vw;
+    background-size: 800px 800px; 
+    
+
     
 
 }
