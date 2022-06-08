@@ -41,13 +41,17 @@ fetch (proxy + url)
         
     }
     })
+    
 
 
 
 
 
+
+alert()
 
 
     .catch(function(error){
         console.log(error);
     })
+
