@@ -42,7 +42,7 @@ fetch (proxy + url)
     }
     })
 
-    console.log();
+    
 
 
 
