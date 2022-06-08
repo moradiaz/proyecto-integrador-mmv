@@ -32,7 +32,7 @@ fetch (proxy + url)
         section.innerHTML +=      
                             `<article class="articlemarc">
                             <div>
-                               <a href="./detalle-canciones.html"><img class="marc" src="./img/canciones/acuestasmarc.jpg" alt=""></a>
+                               <a href="/detalle-canciones.html?idCanciones"><img class="marc" src="./img/canciones/acuestasmarc.jpg" alt=""></a>
                             </div>
                             <div>
                                 <h4>"A cuestas"  Marc Seguí</h4>
@@ -43,6 +43,7 @@ fetch (proxy + url)
     })
     
 
+    console.log();
 
 
 
