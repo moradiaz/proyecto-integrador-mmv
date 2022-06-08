@@ -14,9 +14,12 @@ formulario.addEventListener('submit', function(e) {
     }
 });
 
-const url = 'https://developers.deezer.com/api'
+let section = document.querySelector('.sectionCanciones')
 
-fetch ()
+let proxy = 'https://api.allorigins.win/raw?url='
+let url = 'https://api.deezer.com/chart'
+
+fetch (proxy + url)
     .then (function(response){
         return response.json()
 
@@ -24,6 +27,19 @@ fetch ()
 
     .then (function(data){
         console.log(data);
+
+    for (let i = 0; i < data.length; i++) {
+        section.innerHTML +=      
+                            `<article class="articlemarc">
+                            <div>
+                               <a href="./detalle-canciones.html"><img class="marc" src="./img/canciones/acuestasmarc.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <h4>"A cuestas"  Marc Seguí</h4>
+                            </div>
+                        </article>`
+        
+    }
     })
 
 
