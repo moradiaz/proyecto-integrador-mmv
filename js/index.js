@@ -43,13 +43,10 @@ fetch (proxy + url)
     })
     
 
-    console.log();
+    
 
 
 
-
-
-alert()
 
 
     .catch(function(error){
