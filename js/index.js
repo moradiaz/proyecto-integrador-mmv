@@ -28,14 +28,17 @@ fetch (proxy + url)
     .then (function(data){
         console.log(data);
 
-    for (let i = 0; i < data.length; i++) {
+    let track = data.tracks.data
+    console.log(track);
+
+    for (let i = 0; i < 5; i++) {
         section.innerHTML +=      
                             `<article class="articlemarc">
                             <div>
-                               <a href="/detalle-canciones.html?idCanciones"><img class="marc" src="./img/canciones/acuestasmarc.jpg" alt=""></a>
+                               <a href="/detalle-canciones.html?idCanciones"><img class="marc" src="${track[i].artist.picture_big}" alt=""></a>
                             </div>
                             <div>
-                                <h4>"A cuestas"  Marc Seguí</h4>
+                                <h4>${track[i].title}</h4>
                             </div>
                         </article>`
         
