@@ -38,28 +38,50 @@ fetch (proxy + url)
                             </div>
                             <div>
                                 <h4>${track[i].title}</h4>
+                                <h4>${track[i].artist.name}</h4>
                             </div>
                         </article>`
         
     }
+
+    section = document.querySelector('.sectionCanciones2')
+    for (let i = 0; i < 5; i++) {
+        section.innerHTML +=      
+                            `<article class="articlemarc">
+                            <div>
+                               <a href="/detalle-album.html?idAlbum"><img class="marc" src="${track[i].album.cover_big}" alt=""></a>
+                            </div>
+                            <div>
+                                <h4>${track[i].album.title}</h4>
+                                <h4>${track[i].artist.name}</h4>
+                            </div>
+                        </article>`
+        
+    }
+
+    section = document.querySelector('.sectionCanciones3')
+    for (let i = 0; i < 5; i++) {
+        section.innerHTML +=      
+                            `<article class="articlemarc">
+                            <div>
+                               <a href="/detalle-album.html?idAlbum"><img class="marc" src="${track[i].artist.picture_big}" alt=""></a>
+                            </div>
+                            <div>
+                                <h4>${track[i].artist.name}</h4>
+                            </div>
+                        </article>`
+        
+    }
+
+
+
     })
-
-    
-
-    
-
-
-
     
     
+  
 
-    
-
-
-
-
-
-    .catch(function(error){
+     
+.catch(function(error){
         console.log(error);
     })
 
