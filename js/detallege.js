@@ -4,13 +4,14 @@ let qs = location.search;
 /*convertims la cadena de texto que obtuvimos arriba en un objeto literal para manipular*/
 let qsObjetoLiteral = new URLSearchParams(qs);
 /*obtenemos el valor de una clave de la query string con .get*/
-let nombreQS = qsObjetoLiteral.get ('id');
+let nombreQS = qsObjetoLiteral.get ('idGeneros');
 
 /*seleccionamos la seccion que queremos modificar*/
 let seldg = document.querySelector('.sectionDetalleG');
 let proxy = 'https://api.allorigins.win/raw?url='
 let url =  `https://api.deezer.com/genre/${nombreQS}`
 
+console.log(nombreQS);
 /* "agarramos" esta seccion que seleccionamos, que recibe como parámetro el endpoint que es nuenstra url y el proxy que no cambia*/
 fetch (proxy + url) 
 /*primera promesa: recibe lo que le manda la API y lo transforma a un obj lit, recibe info y se lo manda a la segunda*/
@@ -39,7 +40,7 @@ img.src =  data.picture_big;
     console.log(error);
 })
 
-let url2 =  `https://api.deezer.com/genre/${nombreQS}/artist`
+let url2 =  `https://api.deezer.com/genre${nombreQS}/artists`
 let seldg2= document.querySelector('.sectionDetalleG1');
 
 fetch (proxy + url2) 
@@ -51,7 +52,21 @@ fetch (proxy + url2)
 .then(function(data){
     console.log(data);
 
+    let track = data.tracks.data
+    console.log(track);
 
+    for (let i = 0; i < 5; i++) {
+        section.innerHTML +=   
+           
+                     `<article>
+                        <div>
+                            <h1 class="detallegenero"> ${track[i].name}</h1>
+                        </div>
+                         <div>
+                            <img class="imagenesgeneros" src="${track[i].picture_small}" alt="">
+                         </div>
+                    </article>`
+    }
 
 })
 

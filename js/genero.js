@@ -37,7 +37,7 @@ fetch (proxy + url)
            
                 ` <article class="articlemarc">
                     <div>
-                        <a href="./detalle-genero.html?idGeneros"><img class="marc" src="${track[i].picture_big}" alt=""> </a>
+                        <a href="./detalle-genero.html?idGeneros=${track[i].id}"><img class="marc" src="${track[i].picture_big}" alt=""> </a>
                         <h4> ${track[i].name}</h4>
 
                     </div>
