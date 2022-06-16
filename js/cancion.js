@@ -21,17 +21,17 @@ fetch (proxy + url)
     
 
 
-let img = document.querySelector('. detalleC');
+let img = document.querySelector('.detalleC');
 let title = document.querySelector('.titulodoja'); 
 let cancion = document.querySelector('.nombrecanciondoja');
 let album = document.querySelector('.nombrealbum');
 
 img.src = data.album.cover_big 
-title.innerHTML = data.artist.name
-cancion.innerHTML = data.title 
-album.innerHTML = data.album.title 
+title.innerText = data.artist.name
+cancion.innerText = data.title 
+album.innerText = data.album.title 
 
-
+console.log(data.album.cover_big, data.artist.name, data.title , data.album.title )
 
 })
 

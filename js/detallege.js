@@ -40,7 +40,7 @@ img.src =  data.picture_big;
     console.log(error);
 })
 
-let url2 =  `https://api.deezer.com/genre${nombreQS}/artists`
+let url2 =  `https://api.deezer.com/genre/${nombreQS}/artists`
 let seldg2= document.querySelector('.sectionDetalleG1');
 
 
@@ -54,18 +54,18 @@ fetch (proxy + url2)
 .then(function(data){
     console.log(data);
 
-    let track = data.tracks.data
+    let track = data.data
     console.log(track);
 
-    for (let i = 0; i < 5; i++) {
-        section.innerHTML +=   
+    for (let i = 1; i < 6; i++) {
+        seldg2.innerHTML +=   
            
                      `<article>
                         <div>
                             <h1 class="detallegenero"> ${track[i].name}</h1>
                         </div>
                          <div>
-                            <img class="imagenesgeneros" src="${track[i].picture_small}" alt="">
+                            <img class="imagenesgeneros" src="${track[i].picture_big}" alt="">
                          </div>
                     </article>`
     }

@@ -31,10 +31,11 @@ fetch (proxy + url)
     console.log(track);
 
     for (let i = 0; i < 5; i++) {
+       console.log(track[i].id); 
         section.innerHTML +=      
                             `<article class="articlemarc">
                             <div>
-                               <a href="/detalle-canciones.html?idCanciones=${track[i].id}"><img class="marc" src="${track[i].artist.picture_big}" alt=""></a>
+                               <a href="./detalle-canciones.html?idCanciones=${track[i].id}"><img class="marc" src="${track[i].artist.picture_big}" alt=""></a>
                             </div>
                             <div>
                                 <h4>${track[i].title}</h4>
