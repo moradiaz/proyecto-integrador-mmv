@@ -27,10 +27,6 @@ fetch (proxy + url)
         
         img.src = data.album.cover_big;
         title.innerText = data.title;
-
         
-
-
-
 
     })
