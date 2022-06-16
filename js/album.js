@@ -25,7 +25,9 @@ fetch (proxy + url)
         let ngenero2 = document.querySelector('.añotaylor');
         let ngenero3 = document.querySelector('.discotaylor');
         
-
+        img.src = data.album.cover_big;
+        title.innerText = data.title;
+        
         
 
 
