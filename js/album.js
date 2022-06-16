@@ -24,8 +24,7 @@ fetch (proxy + url)
         let ngenero = document.querySelector('.generotaylor');
         let ngenero2 = document.querySelector('.añotaylor');
         let ngenero3 = document.querySelector('.discotaylor');
-        
-
+    
         
 
 
