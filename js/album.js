@@ -8,6 +8,8 @@ let seldc = document.querySelector('.sectionDA');
 let proxy = 'https://api.allorigins.win/raw?url='
 let url =  `https://api.deezer.com/album/${nombreQS}`
 
+console.log(nombreQS);
+
 fetch (proxy + url)
     .then (function(response){
         return response.json()
