@@ -43,6 +43,8 @@ img.src =  data.picture_big;
 let url2 =  `https://api.deezer.com/genre${nombreQS}/artists`
 let seldg2= document.querySelector('.sectionDetalleG1');
 
+
+
 fetch (proxy + url2) 
 .then(function(response){
     return response.json();

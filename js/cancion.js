@@ -3,13 +3,13 @@ let qs = location.search;
 let qsObjetoLiteral = new URLSearchParams(qs);
 
 let nombreQS = qsObjetoLiteral.get ('idCanciones');
-console.log(nombreQS);
+
 
 let seldc = document.querySelector('.sectionDC');
 let proxy = 'https://api.allorigins.win/raw?url='
 let url =  `https://api.deezer.com/track/${nombreQS}`
 
-
+console.log(nombreQS);
 
 fetch (proxy + url)
     .then (function(response){
