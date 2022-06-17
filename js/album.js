@@ -30,3 +30,13 @@ fetch (proxy + url)
         
 
     })
+
+
+
+
+    .catch(function(error){
+        console.log(error);
+    })
+    
+    
+    

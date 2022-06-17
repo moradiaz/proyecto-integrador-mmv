@@ -65,7 +65,7 @@ fetch (proxy + url)
         section.innerHTML +=      
                             `<article class="articlemarc">
                             <div>
-                               <a href="/detalle-album.html?idArtist"><img class="marc" src="${track[i].artist.picture_big}" alt=""></a>
+                               <a href="./detalle-artista.html?idArtist=${track[i].id}"><img class="marc" src="${track[i].artist.picture_big}" alt=""></a>
                             </div>
                             <div>
                                 <h4>${track[i].artist.name}</h4>

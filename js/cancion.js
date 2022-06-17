@@ -36,3 +36,11 @@ console.log(data.album.cover_big, data.artist.name, data.title , data.album.titl
 })
 
 
+
+
+
+.catch(function(error){
+    console.log(error);
+})
+
+
