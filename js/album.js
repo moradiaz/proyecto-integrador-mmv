@@ -4,7 +4,7 @@ let qsObjetoLiteral = new URLSearchParams(qs);
 let nombreQS = qsObjetoLiteral.get ('idAlbum');
 
 
-section = document.querySelector('.cajaTaylor'); 
+let section = document.querySelector('.cajaTaylor'); 
 let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url =  `https://api.deezer.com/album/${nombreQS}`
 
