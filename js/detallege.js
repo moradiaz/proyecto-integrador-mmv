@@ -1,10 +1,10 @@
 
 /*almacenamos la query string de la url en una variable let que la llamamos qs, a tarvés de location.search*/
 let qs = location.search;
-/*convertims la cadena de texto que obtuvimos arriba en un objeto literal para manipular*/
+/*convertimos la cadena de texto que obtuvimos arriba en un objeto literal para manipular*/
 let qsObjetoLiteral = new URLSearchParams(qs);
 /*obtenemos el valor de una clave de la query string con .get*/
-let nombreQS = qsObjetoLiteral.get ('idGeneros');
+let nombreQS = qsObjetoLiteral.get('idGeneros');
 
 /*seleccionamos la seccion que queremos modificar*/
 let seldg = document.querySelector('.sectionDetalleG');
