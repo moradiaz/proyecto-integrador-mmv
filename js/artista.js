@@ -22,8 +22,6 @@ fetch (proxy + url)
         let title = document.querySelector('.letramiley');
         let top5 = document.querySelector('.letramiley2');
 
-        
-
 
 
 
