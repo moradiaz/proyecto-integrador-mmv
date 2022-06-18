@@ -1,4 +1,4 @@
-/*Recupero de localStorage*/
+/*Recupero de localStorage*/ //hola//
 
 let recuperoStorage = localStorage.getItem('favoritos');
 
