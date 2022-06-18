@@ -20,13 +20,10 @@ fetch (proxy + url)
 
         let img = document.querySelector('.miley');
         let title = document.querySelector('.letramiley');
-        let top5 = document.querySelector('.letramiley2');
-
-        
-
-
-
-
+       
+        img.src = data.picture_big; 
+        title.innerText= data.name; 
+    
     })
 
 
@@ -36,6 +33,25 @@ fetch (proxy + url)
     .catch(function(error){
         console.log(error);
     })
-    
+
+let url2 = `https://api.deezer.com/artist/${nombreQS}/top`
+
+fetch (proxy + url)
+.then (function(response){
+    return response.json()
+
+})
+.then (function(data){
+    console.log(data)
+
+
+    let top5= document.querySelector('.top5');
+    top5.innerText= data.title; 
+
+})
+.catch(function(error){
+    console.log(error);
+})
+
     
     

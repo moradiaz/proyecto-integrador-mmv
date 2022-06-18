@@ -20,9 +20,8 @@ fetch (proxy + url)
 
         let track = data.data
         console.log(track);
-     
+        
         for (let i = 0; i < 1; i++) {
-            console.log(track[i].id); 
              section.innerHTML +=
                                 `<article class="cajaTaylor sectionDA">
                                 <img class="imagenTaylor" src="${track[i].cover_big}"alt=""> </a>
