@@ -5,7 +5,7 @@ let nombreQS = qsObjetoLiteral.get ('idAlbum');
 
 
 let seldc = document.querySelector('.sectionDA');
-let proxy = 'https://api.allorigins.win/raw?url='
+let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url =  `https://api.deezer.com/album/${nombreQS}`
 
 console.log(nombreQS);

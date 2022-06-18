@@ -4,7 +4,7 @@ let qsObjetoLiteral = new URLSearchParams(qs);
 let nombreQS = qsObjetoLiteral.get ('idArtista');
 
 let seldc = document.querySelector('.sectionDArt');
-let proxy = 'https://api.allorigins.win/raw?url='
+let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url =  `https://api.deezer.com/artist/${nombreQS}`
 
 console.log(nombreQS);

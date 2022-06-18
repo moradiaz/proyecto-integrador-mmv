@@ -15,7 +15,7 @@ formulario.addEventListener('submit', function(e) {
 });
 
 let section = document.querySelector('.sectionCanciones')
-let proxy = 'https://api.allorigins.win/raw?url='
+let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url = 'https://api.deezer.com/chart'
 
 fetch (proxy + url)

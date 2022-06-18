@@ -1,5 +1,5 @@
 let section = document.querySelector('.sectionGeneros')
-let proxy = 'https://api.allorigins.win/raw?url='
+let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url =  'https://api.deezer.com/genre'
 
 

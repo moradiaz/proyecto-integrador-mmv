@@ -6,7 +6,7 @@ let nombreQS = qsObjetoLiteral.get ('idCanciones');
 
 
 let seldc = document.querySelector('.sectionDC');
-let proxy = 'https://api.allorigins.win/raw?url='
+let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url =  `https://api.deezer.com/track/${nombreQS}`
 
 console.log(nombreQS);

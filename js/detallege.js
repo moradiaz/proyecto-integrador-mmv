@@ -8,7 +8,7 @@ let nombreQS = qsObjetoLiteral.get ('idGeneros');
 
 /*seleccionamos la seccion que queremos modificar*/
 let seldg = document.querySelector('.sectionDetalleG');
-let proxy = 'https://api.allorigins.win/raw?url='
+let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url =  `https://api.deezer.com/genre/${nombreQS}`
 
 console.log(nombreQS);
