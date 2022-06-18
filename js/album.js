@@ -16,18 +16,24 @@ fetch (proxy + url)
 
     })
     .then (function(data){
-        console.log(data)
+        console.log(data);
 
-        let img = document.querySelector('.imagenTaylor');
-        let title = document.querySelector('.tituloTaylor');
-        let nombrealbum = document.querySelector('.nombrealbumtaylor');
-        let ngenero = document.querySelector('.generotaylor');
-        let ngenero2 = document.querySelector('.añotaylor');
-        let ngenero3 = document.querySelector('.discotaylor');
+        let track = data.data
+        console.log(track);
+     
+        for (let i = 0; i < 1; i++) {
+            console.log(track[i].id); 
+             section.innerHTML +=
+                                `<article class="cajaTaylor sectionDA">
+                                <img class="imagenTaylor" src="${track[i].cover_big}"alt=""> </a>
+                             </article>`
+        }
+        section = document.querySelector('.cajaTaylor'); 
         
-        img.src = data.album.cover_big;
-        title.innerText = data.title;
-        
+        for (let i = 0; i < 1; i++) {
+            console.log(track[i].id); 
+             section.innerHTML +=
+            
 
     })
 
