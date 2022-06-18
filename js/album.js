@@ -4,7 +4,7 @@ let qsObjetoLiteral = new URLSearchParams(qs);
 let nombreQS = qsObjetoLiteral.get ('idAlbum');
 
 
-let seldc = document.querySelector('.sectionDA');
+section = document.querySelector('.cajaTaylor'); 
 let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url =  `https://api.deezer.com/album/${nombreQS}`
 
@@ -28,12 +28,23 @@ fetch (proxy + url)
                                 <img class="imagenTaylor" src="${track[i].cover_big}"alt=""> </a>
                              </article>`
         }
-        section = document.querySelector('.cajaTaylor'); 
+       
         
+        section = document.querySelector('.cajaTaylor')
         for (let i = 0; i < 1; i++) {
             console.log(track[i].id); 
              section.innerHTML +=
+                        `<article class="textoTaylor">
+                            <h1 class="tituloTaylor">${track[i].artist.name}</h1>
+
+                                <h2 class="nombrealbumtaylor">${track[i].data.title}</h2>
             
+                            <h4 class="infoTaylor generotaylor">${track[i].data.genre_id}</h4>
+                             <h4 class="infoTaylor añotaylor">${track[i].data.release_date}</h4>
+                       </article>`
+        
+
+  }
 
     })
 
