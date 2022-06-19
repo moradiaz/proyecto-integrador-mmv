@@ -33,28 +33,29 @@ fetch (proxy + url)
         console.log(error);
     })
 
+
 let url2 = `https://api.deezer.com/artist/${nombreQS}/top`
 let topcinco = document.querySelector('.listacanciones5')
 fetch (proxy + url)
-.then (function(response){
+    .then (function(response){
     return response.json()
 
-})
-.then (function(data){
+    })
+    .then (function(data){
     console.log(data)
 
-    let canciones = data.tracks.data
+    let canciones = data.data
     /*let top5= document.querySelector('.top5');
     top5.innerText= data.title;*/
     for (let i = 0; i < 5; i++) {
        topcinco.innerHTML += 
                             `<ol class="top5canciones">
-                                     <li class="top5">${[i].data.title}</li>
+                                     <li class="top5">${canciones[i].data.title}</li>
                             </ol>`
         
     }
 
-})
+    })
 .catch(function(error){
     console.log(error);
 })
