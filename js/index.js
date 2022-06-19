@@ -18,7 +18,7 @@ let section = document.querySelector('.sectionCanciones')
 let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url = 'https://api.deezer.com/chart'
 
-fetch (url)
+fetch (proxy + url)
     .then (function(response){
         return response.json()
 
@@ -27,9 +27,9 @@ fetch (url)
     .then (function(data){
         console.log(data);
 
-    let track = data.track.data
-    let album = data.album.data
-    let artist = data.artist.data
+    let track = data.tracks.data
+    let album = data.albums.data
+    let artist = data.artists.data
 
     console.log(track);
 
