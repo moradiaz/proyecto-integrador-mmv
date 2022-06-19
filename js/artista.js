@@ -50,7 +50,7 @@ fetch (proxy + url)
     for (let i = 0; i < 5; i++) {
        topcinco.innerHTML += 
                             `<ol class="top5canciones">
-                                     <li class="top5">${canciones[i].data.title}</li>
+                                     <li class="top5">${canciones[i].title}</li>
                             </ol>`
         
     }
