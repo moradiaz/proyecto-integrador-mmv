@@ -18,7 +18,7 @@ let section = document.querySelector('.sectionCanciones')
 let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url = 'https://api.deezer.com/chart'
 
-fetch (proxy + url)
+fetch (url)
     .then (function(response){
         return response.json()
 
@@ -28,6 +28,8 @@ fetch (proxy + url)
         console.log(data);
 
     let track = data.tracks.data
+    let album = data.album.data
+    let artist = data.artist.data
     console.log(track);
 
     for (let i = 0; i < 5; i++) {
@@ -50,11 +52,11 @@ fetch (proxy + url)
         section.innerHTML +=      
                             `<article class="articlemarc">
                             <div>
-                               <a href="./detalle-album.html?idAlbum=${track[i].id}"><img class="marc" src="${track[i].album.cover_big}" alt=""></a>
+                               <a href="./detalle-album.html?idAlbum=${album[i].id}"><img class="marc" src="${album[i].cover_big}" alt=""></a>
                             </div>
                             <div>
-                                <h4>${track[i].album.title}</h4>
-                                <h4>${track[i].artist.name}</h4>
+                                <h4>${album[i].album.title}</h4>
+                                <h4>${album[i].artist.name}</h4>
                             </div>
                         </article>`
         
@@ -65,10 +67,10 @@ fetch (proxy + url)
         section.innerHTML +=      
                             `<article class="articlemarc">
                             <div>
-                               <a href="./detalle-artista.html?idArtist=${track[i].id}"><img class="marc" src="${track[i].artist.picture_big}" alt=""></a>
+                               <a href="./detalle-artista.html?idArtist=${artist[i].id}"><img class="marc" src="${artist[i].picture_big}" alt=""></a>
                             </div>
                             <div>
-                                <h4>${track[i].artist.name}</h4>
+                                <h4>${artist[i].artist.name}</h4>
                             </div>
                         </article>`
         
