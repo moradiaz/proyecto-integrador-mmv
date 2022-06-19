@@ -18,7 +18,7 @@ let section = document.querySelector('.sectionCanciones')
 let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url = 'https://api.deezer.com/chart'
 
-fetch (url+proxy)
+fetch (url)
     .then (function(response){
         return response.json()
 
@@ -27,9 +27,10 @@ fetch (url+proxy)
     .then (function(data){
         console.log(data);
 
-    let track = data.tracks
-    let album = data.album
-    let artist = data.artist
+    let track = data.track.data
+    let album = data.album.data
+    let artist = data.artist.data
+
     console.log(track);
 
     for (let i = 0; i < 5; i++) {
@@ -55,7 +56,7 @@ fetch (url+proxy)
                                <a href="./detalle-album.html?idAlbum=${album[i].id}"><img class="marc" src="${album[i].cover_big}" alt=""></a>
                             </div>
                             <div>
-                                <h4>${album[i].album.title}</h4>
+                                <h4>${album[i].title}</h4>
                                 <h4>${album[i].artist.name}</h4>
                             </div>
                         </article>`
@@ -70,7 +71,7 @@ fetch (url+proxy)
                                <a href="./detalle-artista.html?idArtist=${artist[i].id}"><img class="marc" src="${artist[i].picture_big}" alt=""></a>
                             </div>
                             <div>
-                                <h4>${artist[i].artist.name}</h4>
+                                <h4>${artist[i].name}</h4>
                             </div>
                         </article>`
         
