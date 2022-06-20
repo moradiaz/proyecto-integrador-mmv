@@ -38,12 +38,10 @@ console.log(data.album.cover_big, data.artist.name, data.title , data.album.titl
 })
 
 
-
-
-
 .catch(function(error){
     console.log(error);
 })
+
 
 let favoritos = [];
 
@@ -68,7 +66,7 @@ fav.addEventListener('click', function (e) {
 
 if (favoritos.includes(nombreQS)) {
     
-    /*Evaluar si existe en el array de fav*/
+    
     let indice = favoritos.indexOf(nombreQS);
     favoritos.splice(indice, 1)
     fav.innerText = "Agregar a fav";
