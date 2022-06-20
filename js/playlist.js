@@ -19,7 +19,7 @@ if (favoritos == null || favoritos.length == 0) {
         
 fetch (url)
     .then(function(response) {
-        return response,json()
+        return response.json()
         
     }).then(function(data){
 
