@@ -31,7 +31,7 @@ img.src = data.album.cover_big
 title.innerText = data.artist.name
 cancion.innerText = data.title 
 album.innerText = data.album.title 
-player.src = data.player.id
+player.src
 
 console.log(data.album.cover_big, data.artist.name, data.title , data.album.title )
 
