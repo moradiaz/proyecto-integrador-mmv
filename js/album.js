@@ -45,8 +45,11 @@ fetch (proxy + url)
        
         for (let i = 0; i < canciones.length -1; i++) {
             section2.innerHTML +=
-            ` <ol class="olcanciones">${canciones[i].title}</ol>`
-
+            `<article class="olcanciones">
+            <ol class="olcanciones">${canciones[i].title}</ol>
+            </article>`
+           
+      
         }
 
         
