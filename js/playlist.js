@@ -23,10 +23,13 @@ fetch (url)
         
     }).then(function(data){
 
+let canciones = data;
 
         cancionesFavs +=`<article>
-                                    <img src=${data.album.cover_big}>
-                                    <a href="./detalle-canciones?idCanciones=${data[i].id}"><p>Nombre: ${data[i].title}</p></a>
+                                    <img src=${canciones.album.cover_big}>
+                                    <a href="./detalle-canciones.html?idCanciones=${canciones[i].id}"><p>Nombre: ${canciones[i].title}</p></a>
+                                    <a href="./detalle-artista.html?idArtist=${canciones[i].id}"><p>Artista: ${canciones[i].title}</p></a>
+                                    <a href="./detalle-album.html?idAlbum=${canciones[i].id}"><p>Album: ${canciones[i].title}</p></a>
                                     
                                 </article>`
 
