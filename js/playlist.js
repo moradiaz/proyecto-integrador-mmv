@@ -13,7 +13,7 @@ let cancionesFavs = '';
 if (favoritos == null || favoritos.length == 0) {
     section.innerHTML = '<p>No hay favoritos actualmente</p>';
 } else {
-    for (let i = 0; index < favoritos.length; i++) {
+    for (let i = 0; i < favoritos.length; i++) {
         
         const url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${favoritos[i]}`;
         
