@@ -33,7 +33,7 @@ let canciones = data;
                                     
                                 </article>`
 
-            section.innerHTML = cancionesFav; 
+            section.innerHTML = cancionesFavs; 
     })
 }
 }
