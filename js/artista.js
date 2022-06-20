@@ -50,7 +50,7 @@ fetch (proxy + url2)
     for (let i = 0; i < 5; i++) {
        topcinco.innerHTML += 
                             `<ol class="top5canciones">
-                            <a href="./detalle-canciones.html?idCanciones=${track[i].id}"><li class="top5">${canciones[i].title}</li></a>
+                            <li class="top5">${canciones[i].title}</li>
                             </ol>`
         
     }
