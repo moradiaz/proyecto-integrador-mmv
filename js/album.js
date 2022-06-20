@@ -46,7 +46,7 @@ fetch (proxy + url)
         for (let i = 0; i < canciones.length -1; i++) {
             section2.innerHTML +=
             `<article class="olcanciones">
-            <ol class="olcanciones">${canciones[i].title}</ol>
+            <a href="./detalle-canciones.html?idCanciones=${canciones[i].id}"><ol class="olcanciones">${canciones[i].title}</ol></a>
             </article>`
            
       
