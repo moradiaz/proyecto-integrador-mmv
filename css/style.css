@@ -188,6 +188,18 @@ h4{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 17px;
 }
+.olcanciones{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 17px;
+}
+.cancionesdisco{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    margin-bottom: 0;
+}
 
 
 /*CANCIONES*/
