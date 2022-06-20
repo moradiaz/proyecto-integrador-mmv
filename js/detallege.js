@@ -62,7 +62,7 @@ fetch (proxy + url2)
            
                      `<article>
                         <div>
-                      <h1 class="detallegenero"> ${track[i].name}</h1>
+                        <a href="./detalle-artista.html?idArtist=${track[i].id}"><h1 class="detallegenero"> ${track[i].name}</h1></a>
                         </div>
                          <div>
                          <img class="imagenesgeneros" src="${track[i].picture_big}" alt=""> 
