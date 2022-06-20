@@ -293,7 +293,9 @@ h4{
   .fav:-webkit-details-marker {
     display: none;
   }
-
+  .playerDA{
+      background-color: white;
+  }
 
 /*PLAYSLIST*/
 
