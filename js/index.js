@@ -64,7 +64,7 @@ fetch (proxy + url)
     }
 
     section = document.querySelector('.sectionCanciones3')
-    for (let i = 0; i < 5; i++) {
+    for (let i = 1; i < 6; i++) {
         section.innerHTML +=      
                             `<article class="articlemarc">
                             <div>
@@ -80,7 +80,7 @@ fetch (proxy + url)
 
 
     })
-    
+
     
     
   
