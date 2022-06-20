@@ -32,7 +32,7 @@ fetch (proxy + url)
     let artist = data.artists.data
 
     console.log(track);
-el
+
     for (let i = 0; i < 5; i++) {
        console.log(track[i].id); 
         section.innerHTML +=      
