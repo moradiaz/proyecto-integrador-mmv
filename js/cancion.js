@@ -25,11 +25,13 @@ let img = document.querySelector('.detalleC');
 let title = document.querySelector('.titulodoja'); 
 let cancion = document.querySelector('.nombrecanciondoja');
 let album = document.querySelector('.nombrealbum');
+let player = document.querySelector('.playerDA')
 
 img.src = data.album.cover_big 
 title.innerText = data.artist.name
 cancion.innerText = data.title 
 album.innerText = data.album.title 
+player.src = data.player.id
 
 console.log(data.album.cover_big, data.artist.name, data.title , data.album.title )
 
