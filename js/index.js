@@ -31,12 +31,12 @@ fetch(proxy + url)
         let album = data.albums.data
         let artist = data.artists.data
 
-        console.log(track);
-        el
-        for (let i = 0; i < 5; i++) {
-            console.log(track[i].id);
-            section.innerHTML +=
-                `<article class="articlemarc">
+    console.log(track);
+
+    for (let i = 0; i < 5; i++) {
+       console.log(track[i].id); 
+        section.innerHTML +=      
+                            `<article class="articlemarc">
                             <div>
                                <a href="./detalle-canciones.html?idCanciones=${track[i].id}"><img class="marc" src="${track[i].artist.picture_big}" alt=""></a>
                             </div>

@@ -27,9 +27,9 @@ let canciones = data;
 
         cancionesFavs +=`<article>
                                     <img src=${canciones.album.cover_medium}>
-                                    <a href="./detalle-canciones.html?idCanciones=${canciones[i].id}"><p>Nombre: ${canciones.title}</p></a>
-                                    <a href="./detalle-artista.html?idArtist=${canciones[i].id}"><p>Artista: ${canciones.artist.name}</p></a>
-                                    <a href="./detalle-album.html?idAlbum=${canciones[i].id}"><p>Album: ${canciones.album.title}</p></a>
+                                    <p>Nombre: ${canciones.title}</p>
+                                    <p>Artista: ${canciones.artist.name}</p>
+                                    <p>Album: ${canciones.album.title}</p>
                                 </article>
                                 <hr>`
 
