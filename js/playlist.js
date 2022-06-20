@@ -26,7 +26,7 @@ fetch (url)
 let canciones = data;
 
         cancionesFavs +=`<article>
-                                    <img src=${canciones.album.cover_big}>
+                                    <img src=${canciones.album.cover_small}>
                                     <a href="./detalle-canciones.html?idCanciones=${canciones.id}"><p>Nombre: ${canciones.title}</p></a>
                                     <a href="./detalle-artista.html?idArtist=${canciones.id}"><p>Artista: ${canciones.artist.title}</p></a>
                                     <a href="./detalle-album.html?idAlbum=${canciones.id}"><p>Album: ${canciones.album.title}</p></a>
