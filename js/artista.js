@@ -36,7 +36,7 @@ fetch (proxy + url)
 
 let url2 = `https://api.deezer.com/artist/${nombreQS}/top`
 let topcinco = document.querySelector('.listacanciones5')
-fetch (proxy + url)
+fetch (proxy + url2)
     .then (function(response){
     return response.json()
 
