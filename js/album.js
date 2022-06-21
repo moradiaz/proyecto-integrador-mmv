@@ -28,7 +28,7 @@ fetch (proxy + url)
         title.innerText = data.artist.name;
         nombrealbum.innerText = data.title; 
         ngenero2.innerText = data.release_date;
-        ngenero.innerText = data.genres.data.name;
+        ngenero.innerText = data.genres.data[0].name;
     })
     
     let section2= document.querySelector('.cancionesTaylor');
@@ -39,8 +39,7 @@ fetch (proxy + url)
     .then (data => {
         console.log(data)
         
-        /* let lista = document.querySelector('.olcanciones');
-        olcanciones.innerText = `Canciones del disco : ${data.title}`;*/
+        
         let canciones = data.data; 
        
         for (let i = 0; i < canciones.length -1; i++) {
